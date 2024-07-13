@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacts</title>
+</head>
+
+<body style="align-items: center;text-align: center;">
+    <h1>contact list</h1>
+    {% for i in detail %}
+    <table border="1">
+        <tr>
+            <td>{{i.name}}</td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'individual' %}"> see</a></td>
+        </tr>
+    </table>
+
+
+    {% endfor %}
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+</head>
+<body>
+    <form method="post">
+    
+        {% csrf_token %}
+        <input type="text" placeholder="Enter name" name="name"><br>
+        <br>
+        <input type="email" placeholder="Enter email" name="email"><br>
+        <br>
+        <input type="tel" placeholder="Enter number" name="number"><br>
+        <br>
+        <input type="tel" placeholder="Enter alternative number" name="alt"><br>
+        <br>
+        <input type="file" name="image" ><br>
+        <br>
+        <button type="submit" class="btn btn-success">update</button>
+
+
+
+   
+       
+
+
+    </form>
+</body>
+</html>
